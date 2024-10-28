@@ -1,0 +1,118 @@
+/*
+12px = 0.6vi
+30px = 1.5vi
+120px = 6vi
+67px = 3.35vi
+*/
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 6vi;
+    background-color: #171615;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5vi 1vi;
+    z-index: 1000;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo {
+    width: 3.35vi;
+    height: 3.35vi;
+    margin-right: 0.6vi;
+    margin-left: 4vi;
+}
+
+.company-name {
+    font-size: 1.5vi;
+    font-family: 'Bungee', cursive;
+}
+
+.header-center {
+    display: flex;
+    gap: 1.55vi;
+} 
+
+.nav-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5vi;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    color: #FED360;
+    transform: scale(1.1);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.user-dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.user-button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5vi;
+    margin-right: 0.5vi;
+}
+
+.user-button-flecha{
+    width: 0.75vi;
+    height: 0.4vi;
+    margin-bottom: 0.25vi;
+    margin-right: 0.9vi;
+    margin-left: 0.5vi;
+}
+
+.profile-pic {
+    margin-right: 4vi;
+    width: 2.5vi;
+    height: 2.5vi;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 2vi;
+    right: 0;
+    background-color: #444;
+    min-width: 7.5vi;
+    box-shadow: 0px 0.4vi 0.8vi rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0.25vi;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 0.5vi 0.75vi;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.show {
+    display: block;
+}

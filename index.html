@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    
+    <title>Header Fijo</title>
+</head>
+<body>
+    <header class="fixed-header">
+        <div class="header-left">
+            <img src="./storage/Logo.png" alt="Logo de la Empresa" class="brand-logo">
+            <span class="company-name">Puchland</span>
+        </div>
+        <nav class="header-center">
+            <button class="nav-button">Minijuegos</button>
+            <button class="nav-button">Blogs</button>
+            <button class="nav-button">Comunidad</button>
+            <button class="nav-button">Noticias</button>
+            <button class="nav-button">Eventos</button>
+        </nav>
+        <div class="header-right">
+            <div class="user-dropdown">
+                <button class="user-button" onclick="toggleDropdown()">Usuario <img class="user-button-flecha" src="./storage/flecha_abajo.png"></button>
+                <img src="./storage/user.png" alt="Foto de perfil" class="profile-pic">
+                <div class="dropdown-content" id="dropdownMenu">
+                    <a href="#">Perfil</a>
+                    <a href="#">Configuración</a>
+                    <a href="#">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="./js/script.js">
+        
+    </script>
+</body>
+</html>
