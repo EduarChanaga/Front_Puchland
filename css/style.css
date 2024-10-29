@@ -9,3 +9,109 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
+.parte1_index{
+    height: 44vi;
+}
+
+.parte1_1_index {
+    margin-top: 6vi;
+    height: 38vi;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+.parte1_2_index {
+    background-color: #171615;
+    height: 6vi;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vi; 
+}
+
+.btn-centro {
+    padding: 0.1vi 0.2vi;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.025vi;
+    color: #ffffff;
+}
+
+.btn1 {
+    background-color: #4a56d8; 
+    background-image: url(../storage/discord.png);
+    background-size: 80%; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 3.2vi;;
+    height: 3.2vi;
+    border: none;
+    border-radius: 0.25vi;
+    cursor: pointer;
+    box-shadow: 
+        0 -0.25vi 0 0 #7F89F6, 
+        0 0.25vi 0 0 #3541bd;  
+}
+
+.btn1:hover{
+    transform: scale(1.1);
+}
+
+.btn2 {
+    margin-left: 20px;
+    background-color: #EB3232;
+    width: 15vi; 
+    height: 3.2vi;
+    border-radius: 0.25vi;
+    font-size: 2.25vi;
+    font-family: 'Bungee', cursive;
+    color: #FFD868;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    padding: 0; 
+    border: none;
+    box-shadow: 
+        0 -0.25vi 0 0 #FE5E5E, 
+        0 0.25vi 0 0 #BA2525;  
+}
+
+
+.btn2:hover {
+    transform: scale(1.1);
+    color: #f1c747;
+}
+
+.degrade{
+    position: absolute;
+    opacity: 70%;
+    width: 100%;
+    height: 38.8vi;
+    z-index: 1;
+}
+
+
+.abeja_button {
+    position: absolute;
+    background-image: url('../storage/Abeja_help.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    margin-top: 22vi;
+    margin-left: 77%;
+    width: 20vi;
+    height: 11.5vi;
+    border: none;      
+    background-color: transparent; 
+    padding: 0;        
+    cursor: pointer;    
+}
+
+.abeja_button:hover{
+    transform: scale(1.05);
+}

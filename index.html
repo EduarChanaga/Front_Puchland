@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./storage/Logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/modal_ayuda.css">
     
-    <title>Header Fijo</title>
+    <title>PUCHLAND</title>
 </head>
 <body>
+
+    <!--    Header  -->
     <header class="fixed-header">
         <div class="header-left">
             <img src="./storage/Logo.png" alt="Logo de la Empresa" class="brand-logo">
@@ -34,6 +38,68 @@
             </div>
         </div>
     </header>
+
+    <script>
+        function toggleDropdown() {
+            document.getElementById("dropdownMenu").classList.toggle("show");
+        }
+
+        // Cierra el menú si se hace clic fuera de él
+        window.onclick = function(event) {
+            if (!event.target.matches('.user-button') && !event.target.matches('.profile-pic')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+
+
+
+    <!--    Primer apartado del index   -->
+    <Section class="parte1_index">
+        <div class="parte1_1_index" style="background-image: url(../storage/fondo_evento.png);">
+            <img class="degrade" src="./storage/degrade.png">
+            <button class="abeja_button"></button>
+        </div> 
+        <div class="parte1_2_index">
+            <button class="btn-centro btn1"></button>
+            <button class="btn-centro btn2">PLAY</button>
+        </div>
+    </Section>
+
+
+    <!-- Modal ayuda -->
+    <div id="modalAyuda" class="modal">
+        <div class="modal-content">
+            <img src="./storage/Abeja_fondo.jpg" class="abeja_fondo">
+            <h1 class="modal_title">¿Tienes algun problema?</h1>
+            <p class="modal_text">Dejamos saberlo y de ayudaremos lo más rápido posible!</p>
+        </div>
+    </div>
+
+    <script>
+        // Obtiene el modal
+        const modal = document.getElementById("modalAyuda");
+        const abejaButton = document.querySelector(".abeja_button");
+        const closeBtn = document.querySelector(".close");
+        abejaButton.onclick = function() {
+            modal.style.display = "block";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+
+
 
     <script src="./js/script.js">
         
