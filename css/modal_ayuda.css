@@ -34,3 +34,47 @@
     margin: 0 2vi;
     text-align: center; 
 }
+
+.form-ayuda label {
+    display: block;
+    font-size: 1vi;
+    margin: 1vi 0vi 0vi 2vi;
+    font-weight: bold;
+}
+
+select,input {
+    width: 80%;
+    padding: 0.5vi;
+    margin: 0.25vi 2vi;
+    margin-bottom: 0.5vi;
+    font-size: 0.9vi;
+    background-color: #ECE9E9;
+    border: none;
+    border: 0.2vi;
+}
+
+.btn-enviar {
+    width: 9vi;
+    height:2.25vi;
+    font-family: 'Bungee', cursive;
+    margin: 1vi 8vi;
+    background-color: #FFD76A;
+    border: none;
+    padding: 0.5vi 1vi;
+    font-size: 1.25vi;
+    font-weight: bold;
+    color: #1a1a1a;
+    cursor: pointer;
+    margin-top: 0.75vi;
+    box-shadow: 
+        0 -0.25vi 0 0 #FFE18D, 
+        0 0.25vi 0 0 #F1BA42; 
+}
+.btn-enviar:hover{
+    transform: scale(1.1);
+}
+
+.registro-text {
+    font-size: 0.5vi;
+    margin: 0.5vi 1vi;
+}

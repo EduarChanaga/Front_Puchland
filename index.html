@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/modal_ayuda.css">
+    <link rel="stylesheet" href="./css/section2.css">
     
     <title>PUCHLAND</title>
 </head>
@@ -74,14 +75,32 @@
     </Section>
 
 
+
+
     <!-- Modal ayuda -->
-    <div id="modalAyuda" class="modal">
-        <div class="modal-content">
-            <img src="./storage/Abeja_fondo.jpg" class="abeja_fondo">
-            <h1 class="modal_title">¿Tienes algun problema?</h1>
-            <p class="modal_text">Dejamos saberlo y de ayudaremos lo más rápido posible!</p>
-        </div>
+<div id="modalAyuda" class="modal">
+    <div class="modal-content">
+        <img src="./storage/Abeja_fondo.jpg" class="abeja_fondo">
+        <h1 class="modal_title">¿Tienes algun problema?</h1>
+        <p class="modal_text">Déjanos saberlo y te ayudaremos lo más rápido posible!</p>
+        
+        <!-- Formulario de ayuda -->
+        <form id="formAyuda" class="form-ayuda">
+            <label for="problema">Selecciona tu Problema:</label>
+            <select id="problema" required>
+                <option value="">Problemas de conexión...</option>
+            </select>
+
+            <label for="usuario">Escribe tu nombre de Usuario:</label>
+            <input type="text" id="usuario" placeholder="Nombre de usuario..." required>
+            
+            
+            <button type="submit" class="btn-enviar">ENVIAR</button>
+            <p class="registro-text">Debes estar registrado para reportar un problema: <a href="#">Registrarse Aquí</a></p>
+        </form>
     </div>
+</div>
+
 
     <script>
         // Obtiene el modal
@@ -97,6 +116,40 @@
             }
         }
     </script>
+
+
+
+
+
+    <!--    Segundo apartado del index   -->
+    <Section class="parte2_index">
+        <div class="parte2_2_index">
+            <h2 class="titulo-jugadores">¡Jugadores!</h2>
+            <p class="jugadores-registrados">Jugadores registrados hasta <span class="hoy">HOY</span>!</p>
+            <p class="numero-jugadores"> <img src="./storage/person.png" style="width: 1.5vi; height: 1.5vi; margin-top: 0.5vi;"> 1,256</p>
+            
+            <div class="cont-ultimos-jugadores">
+                
+                <img src="./storage/steve.png" class="steve">
+
+                <div class="ultimos-jugadores">
+                    <h3>¡Últimos jugadores <br> <span class="registrados">Registrados!</span></h3>
+                    <ul class="lista-jugadores">
+                        <li><img src="./storage/avatar1.png" alt="avatar"> Eleman_Esp</li>
+                        <li><img src="./storage/avatar2.png" alt="avatar"> Bekacraftyt</li>
+                        <li><img src="./storage/avatar3.png" alt="avatar"> Gaoesnud1807</li>
+                        <li><img src="./storage/avatar2.png" alt="avatar"> Bekacraftyt</li>
+                        <li><img src="./storage/avatar1.png" alt="avatar"> Eleman_Esp</li>
+                        <li><img src="./storage/avatar2.png" alt="avatar"> Bekacraftyt</li>
+                        <li><img src="./storage/avatar3.png" alt="avatar"> Gaoesnud</li>
+                    </ul>
+                    <button class="btn-registro">REGISTRO</button>
+                </div>
+            </div>
+
+        </div>
+        
+    </Section>
 
 
 

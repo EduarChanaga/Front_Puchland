@@ -1,0 +1,143 @@
+.parte2_2_index {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../storage/degrade2.png);
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo-jugadores {
+    font-size: 0.9vi;
+    color: #00A936;
+    margin: 1vi;
+    padding: 0.5vi 2vi;
+    background-color: #C7E7D5;
+}
+
+.jugadores-registrados {
+    font-size: 1vi;
+    color: #333;
+}
+
+.hoy {
+    font-weight: bold;
+    color: #000;
+}
+
+.numero-jugadores {
+    font-size: 1.5vi;
+    color:#EB3232;
+    margin: 10px 0;
+    font-family: 'Bungee', cursive;
+}
+
+.cont-ultimos-jugadores {
+    display: block;
+    width: 100%;
+}
+
+.ultimos-jugadores {
+    background-color: #f5f5f5;
+    border-radius: 0.4vi;
+    width: 17.5vi;
+    height: 30vi;
+    margin: 1vi 55%; 
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lista-jugadores {
+    list-style: none;
+    padding: 0;
+    margin: 1vi 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5vi; 
+    max-height: 21vi;
+    overflow-y: auto;
+}
+
+
+
+.ultimos-jugadores h3 {
+    background-color: #FFDE85;
+    padding: 0.6vi;
+    border-radius: 0.25vi 0.25vi 0 0;
+    font-size: 0.9vi;
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 
+        0 -0.25vi 0 0 #FFF8EA, 
+        0 0.25vi 0 0 #FFCC5F;  
+}
+
+.registrados {
+    color: red;
+    font-weight: bold;
+}
+
+.lista-jugadores {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 1vi 0;
+}
+
+.lista-jugadores li {
+    position: relative;
+    width: 12vi;
+    height: 2.25vi;
+    background-color: #ffffff;
+    border-radius: 0.25vi;
+    display: flex;
+    align-items: center;
+    padding: 0.4vi;
+    font-size: 1vi;
+    margin-bottom: 0.25vi;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lista-jugadores img {
+    width: 1.5vi;
+    height: 1.5vi;
+    margin-right: 0.5vi;
+    border-radius: 50%;
+}
+
+.btn-registro {
+    position: relative;
+    width: 7vi;
+    font-size: 0.9vi;
+    background-color: #FFD76A;
+    border: none;
+    padding: 0.25vi 0;
+    font-weight: bold;
+    font-family: 'Bungee', cursive;
+    color: #333;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 0.25vi;
+    margin-bottom: 1vi;
+    box-shadow: 0 0.1vi 0.2vi rgba(0, 0, 0, 0.1);
+    box-shadow: 
+        0 -0.25vi 0 0 #FFF8EA, 
+        0 0.25vi 0 0 #FFCC5F;  
+}
+
+.btn-registro:hover {
+    background-color: #ffcc33;
+    transform: scale(1.1);
+    
+}
+
+
+.steve{
+    position: absolute;
+    width: 24vi;
+    height: 29vi;
+    margin: 0 -25%;
+}
